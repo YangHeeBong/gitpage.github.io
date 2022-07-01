@@ -6,7 +6,6 @@ jobs:
     name: A job to test check-html-links-action
     steps:
     - uses: actions/checkout@v3    
-    - run: cd docs
     - run: ls -al
     - uses: actions/checkout@v3
     - name: check-html-links-action step
