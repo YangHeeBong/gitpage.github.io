@@ -6,7 +6,6 @@ jobs:
     name: A job to test check-html-links-action
     steps:
     - name: Run a one-line script
-      run: echo check-html-links install!
       run: npm i -D check-html-links
     - name: check-html-links-action step
       id: check-links
