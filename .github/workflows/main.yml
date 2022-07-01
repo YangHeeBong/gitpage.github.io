@@ -2,11 +2,10 @@ on: [push]
 
 jobs:
   test:
-    name: Test
     runs-on: ubuntu-latest
+    name: Test   
     steps:
       - uses: actions/checkout@main
       - uses: peaceiris/actions-gh-pages@main
-      - run: echo 'run tests'
-      - with:
+      with:
           publish_dir: ./docs
