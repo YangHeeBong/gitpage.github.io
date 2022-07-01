@@ -25,4 +25,3 @@ jobs:
           tests: tests/**.js
           token: ${{ secrets.GITHUB_TOKEN }}
           comment-on-empty: true
-          has-tests-label: true
