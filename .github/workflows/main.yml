@@ -5,14 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to test check-html-links-action
     steps:
-    - run: ls -al
-    - uses: actions/checkout@v3
-    - run: ls -al
+    - uses: actions/checkout@v3    
     - run: cd docs
+    - run: ls -al
     - uses: actions/checkout@v3
     - name: check-html-links-action step
       id: check-links
       uses: modernweb-dev/check-html-links-action@v1.1
       with:
         doc-folder: 'docs'
-    - run: ls -al
