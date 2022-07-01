@@ -12,8 +12,8 @@ jobs:
       with:
         doc-folder: 'test-site'
     - uses: testomatio/check-tests@stable
-    with:
-      framework: jest
-      tests: 'test-site/*.js'
-      token: ${{ secrets.GITHUB_TOKEN }}
-      github-pat: ${{ secrets.GH_PAT }}
+      with:
+        framework: jest
+        tests: 'test-site/*.js'
+        token: ${{ secrets.GITHUB_TOKEN }}
+        github-pat: ${{ secrets.GH_PAT }}
