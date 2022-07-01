@@ -11,14 +11,18 @@ jobs:
       uses: modernweb-dev/check-html-links-action@v1.1
       with:
         doc-folder: 'test-site'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Check Tests
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - uses: testomatio/check-tests@stable
-      with:
-        framework: jest
-        tests: tests/**.js
-        token: ${{ secrets.GITHUB_TOKEN }}
-        comment-on-empty: true
-        has-tests-label: true
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: testomatio/check-tests@stable
+        with:
+          framework: jest
+          tests: tests/**.js
+          token: ${{ secrets.GITHUB_TOKEN }}
+          comment-on-empty: true
+          has-tests-label: true
