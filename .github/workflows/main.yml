@@ -11,4 +11,4 @@ jobs:
       id: check-links
       uses: modernweb-dev/check-html-links-action@v1
       with:
-        doc-folder: 'root'
+        doc-folder: 'site'
