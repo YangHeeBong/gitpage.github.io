@@ -12,3 +12,7 @@ jobs:
       uses: modernweb-dev/check-html-links-action@v1.1
       with:
         doc-folder: 'docs'
+    - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
