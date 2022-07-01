@@ -5,8 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to test check-html-links-action
     steps:
+    - name: Run a one-line script
+      run: echo check-html-links install!
+      run: npm i -D check-html-links
     - name: check-html-links-action step
       id: check-links
       uses: modernweb-dev/check-html-links-action@v1
       with:
-        doc-folder: ''
+        doc-folder: 'root'
