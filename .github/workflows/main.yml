@@ -7,6 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: check-html-links-action step
+      fetch-depth: 0
       id: check-links
       uses: modernweb-dev/check-html-links-action@v1.1
       with:
@@ -14,6 +15,7 @@ jobs:
     - uses: testomatio/check-tests@stable
       with:
         framework: jest
-        tests: 'test-site/*.js'
+        tests: 'test-site/*.spec.js'
         token: ${{ secrets.GITHUB_TOKEN }}
-        github-pat: ${{ secrets.GH_PAT }}
+        comment-on-empty: true
+        has-tests-label: true
