@@ -7,7 +7,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: check-html-links-action step
-      fetch-depth: 0
       id: check-links
       uses: modernweb-dev/check-html-links-action@v1.1
       with:
