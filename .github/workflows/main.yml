@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to test check-html-links-action
     steps:
-      - uses: actions/checkout@main
-      - uses: peaceiris/actions-gh-pages@main
+    - uses: actions/checkout@main
+    - name: check-html-links-action step
+    - uses: peaceiris/actions-gh-pages@main
+    - name: actions-gh-pages step
       with:
           publish_dir: ./docs
