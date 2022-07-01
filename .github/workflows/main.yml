@@ -10,4 +10,4 @@ jobs:
       id: check-links
       uses: modernweb-dev/check-html-links-action@v1.1
       with:
-        doc-folder: 'test-site-failing'
+        doc-folder: 'test-site'
