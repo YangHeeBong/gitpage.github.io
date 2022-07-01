@@ -8,6 +8,8 @@ jobs:
     - run: ls -al
     - uses: actions/checkout@v3
     - run: ls -al
+    - run: cd docs
+    - uses: actions/checkout@v3
     - name: check-html-links-action step
       id: check-links
       uses: modernweb-dev/check-html-links-action@v1.1
