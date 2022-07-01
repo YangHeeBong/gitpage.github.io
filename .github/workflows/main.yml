@@ -3,7 +3,7 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Test
+    name: A job to test check-html-links-action
     steps:
       - uses: actions/checkout@main
       - uses: peaceiris/actions-gh-pages@main
