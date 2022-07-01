@@ -11,9 +11,9 @@ jobs:
       id: check-links
       uses: modernweb-dev/check-html-links-action@v1.1
       with:
-        doc-folder: 'docs'
+        doc-folder: docs
     - name: Install and Build
-        run: |
+        run:
           npm ci
           npm run build
     - name: Deploy
